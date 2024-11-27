@@ -34,6 +34,8 @@
             this.btnSend = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCreateConversation = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtMessage
@@ -82,19 +84,39 @@
             // 
             // btnCreateConversation
             // 
-            this.btnCreateConversation.Location = new System.Drawing.Point(12, 78);
+            this.btnCreateConversation.Location = new System.Drawing.Point(12, 113);
             this.btnCreateConversation.Name = "btnCreateConversation";
-            this.btnCreateConversation.Size = new System.Drawing.Size(75, 23);
+            this.btnCreateConversation.Size = new System.Drawing.Size(75, 29);
             this.btnCreateConversation.TabIndex = 8;
             this.btnCreateConversation.Text = "new";
             this.btnCreateConversation.UseVisualStyleBackColor = true;
             this.btnCreateConversation.Click += new System.EventHandler(this.btnCreateConversation_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(9, 74);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(178, 17);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Vui lòng chọn cuộc hội thoại ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 93);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 17);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "trước khi nhắn";
             // 
             // ChatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCreateConversation);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSend);
@@ -116,5 +138,7 @@
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCreateConversation;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
