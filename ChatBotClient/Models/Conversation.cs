@@ -7,7 +7,7 @@ namespace ChatBotClient.Models
         public int ConversationID { get; set; }
         public int UserID { get; set; }
         public DateTime StartTime { get; set; }
-        public DateTime? EndTime { get; set; } // Thay đổi đây
+        public DateTime? EndTime { get; set; } 
         public string Status { get; set; }
     }
 

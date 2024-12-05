@@ -17,7 +17,7 @@ namespace ChatBotClient.Services
         public ApiService()
         {
             client = new HttpClient();
-            client.BaseAddress = new Uri("http://171.248.149.41:5000/"); // Địa chỉ API server của bạn
+            client.BaseAddress = new Uri("http://localhost:5000/"); // Địa chỉ API server của bạn
         }
 
         public async Task<User> Login(string username, string password)
